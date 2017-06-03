@@ -9,7 +9,7 @@ from .models import User
 api_key = settings.TWITTER_BLOCKER_API_KEY
 api_secret = settings.TWITTER_BLOCKER_API_SECRET
 
-user_ids = [
+spam_user_ids = [
     870250103004577792, # @xxxx_xxx_george ネタバレアカウント(一部伏せ字)
     
 ]
@@ -21,8 +21,12 @@ def index(request):
         user = User.objects.get(user_id=user_id)
     except:
         user = None
-    return render(request, 'twitter_blocker/index.html',
-                  {'user': user, 'user_id': user_id, 'block_count': block_count})
+    return render(request, 'twitter_blocker/index.html', {
+        'user': user,
+        'user_id': user_id,
+        'block_count': block_count,
+        'spam_user_ids': spam_user_ids,
+    })
 
 def blocked(request):
     return render(request, 'twitter_blocker/blocked.html')
@@ -43,7 +47,7 @@ def callback(request):
 
     # spam report & block
     blocked_user_ids = []
-    for user_id in user_ids:
+    for user_id in spam_user_ids:
         api.report_spam(user_id=user_id)
         blocked_user_ids.append(user_id)
     blocked_user_ids = ','.join(list(map(str, blocked_user_ids)))
