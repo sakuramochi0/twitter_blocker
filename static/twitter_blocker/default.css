@@ -1,0 +1,106 @@
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+p[lang=en], h1[lang=en], h2[lang=en], h3[lang=en], section[lang=en], p.time {
+    margin: 5px 0 0;
+    color: rgba(0,0,0,.4);
+    font-size: 16px;
+}
+article {
+    max-width: 740px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+div.quote, div.notice {
+    margin-top: 30px;
+    padding: 0 20px 20px;
+    border: gray double;
+}
+div.quote p, div.notice p {
+    margin-top: 16px;
+    font-size: 16px;
+}
+div.quote {
+    background-color: lightyellow;
+}
+div.notice {
+    background-color: mintcream;
+}
+a {
+    text-decoration: none;
+    color: #03A4F4; /* material light blue */
+}
+h1 {
+    margin: 40px 0 0;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #03A4F4; /* material light blue */
+}
+h2 {
+    margin: 30px 0 0;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+section p, iframe, table {
+    margin: 30px 0 0;
+}
+nav, section li {
+    margin: 20px 0 0;
+}
+table {
+    font-size: 16px;
+}
+table, thead {
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: center;
+}
+th.date {
+    width: 10em;
+}
+tr:nth-child(2n+1) td {
+    background-color: rgba(0,0,0,.1);
+}
+img {
+    margin-top: 30px;
+    max-height: 600px;
+    max-width: 100%;
+}
+footer {
+    margin: 100px 0 0;
+}
+footer p {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+footer img {
+    margin: 0;
+    max-height: 2em;
+}
+.tweet-btn, #connect-btn {
+    margin: 30px;
+    text-align: center;
+}
+

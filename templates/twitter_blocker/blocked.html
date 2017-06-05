@@ -1,44 +1,23 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>キンプラ ネタバレ アカウント スパム報告＆ブロックサービス ❌</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="XgVpJ5azAN2UwYSHRfKnJIPYVFtsNVnZRzKiLDfebX8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'avex_export_ban/default.css' %}">
-    <script src="{% static 'js/google-analytics.js' %}"></script>
-    <!--[if lt IE 9]>
-	    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
-  </head>
-  <body>
-    <article>
-        <h1><a href="/prettyrhythm/twitter_blocker/">キンプラ ネタバレ アカウント スパム報告＆ブロックサービス ❌</a></h1>
-      <div class="notice">
-          <h2>アカウントの「スパム報告」と「ブロック」が完了しました！</h2>
-          <p>⚠注意: 自分のアカウントのブロックリストを見ると、重要なネタバレが含まれるアカウント名や@IDが見えてしまいます！ 映画を見るまではブロックリストを開かないように気を付けてください。</p>
-          <p>すでに試写会でキンプラを観た何人かの方が動作確認をしてくれました！ 本当にちゃんとブロックされているのか不安な方は<a href="https://twitter.com/skrmch_rhythpri/status/870329327073636354">こちらのツイート</a>を参考にしてください。</p>
-      </div>
+{% extends 'twitter_blocker/base.html' %}
+{% block body %}
+<div class="container">
+<h1><a href="/prettyrhythm/twitter_blocker/">キンプラ ネタバレ アカウント スパム報告＆ブロックサービス ❌</a></h1>
+<div class="notice">
+<h2>アカウントの「スパム報告」と「ブロック」が完了しました！</h2>
+<p>⚠注意: 自分のアカウントのブロックリストを見ると、重要なネタバレが含まれるアカウント名や@IDが見えてしまいます！ 映画を見るまではブロックリストを開かないように気を付けてください。</p>
+<p>すでに試写会でキンプラを観た何人かの方が動作確認をしてくれました！ 本当にちゃんとブロックされているのか不安な方は<a href="https://twitter.com/skrmch_rhythpri/status/870329327073636354">こちらのツイート</a>を参考にしてください。</p>
+</div>
 
-      <div class="tweet-btn">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="https://skrm.ch/prettyrhythm/twitter_blocker">このサービスをツイートする</a>
-      </div>
+<div class="tweet-btn">
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="https://skrm.ch/prettyrhythm/twitter_blocker">このサービスをツイートする</a>
+</div>
 
-      <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">「キンプラネタバレアカウントスパム報告＆ブロックサービス❌」を作りました！<br>プリズムの煌きを失ってしまったアカウントを、自動的にスパム報告してブロックします。<a href="https://t.co/pxZOz1gaXE">https://t.co/pxZOz1gaXE</a> <a href="https://t.co/ZbS9VFqYBm">pic.twitter.com/ZbS9VFqYBm</a></p>&mdash; さくらもち@プリズム✨ (@skrmch_rhythpri) <a href="https://twitter.com/skrmch_rhythpri/status/870328341009584129">June 1, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">「キンプラネタバレアカウントスパム報告＆ブロックサービス❌」を作りました！<br>プリズムの煌きを失ってしまったアカウントを、自動的にスパム報告してブロックします。<a href="https://t.co/pxZOz1gaXE">https://t.co/pxZOz1gaXE</a> <a href="https://t.co/ZbS9VFqYBm">pic.twitter.com/ZbS9VFqYBm</a></p>&mdash; さくらもち@プリズム✨ (@skrmch_rhythpri) <a href="https://twitter.com/skrmch_rhythpri/status/870328341009584129">June 1, 2017</a></blockquote>
 
-      <iframe width="100%" height="400" src="https://www.youtube.com/embed/0aX1-ujv2K0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/0aX1-ujv2K0" frameborder="0" allowfullscreen></iframe>
 
-      <p>予告動画を見ながら、公開日を楽しみに待ちましょう！🌹👑✨</p>
+<p>予告動画を見ながら、公開日を楽しみに待ちましょう！🌹👑✨</p>
 
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </article>
-  </body>
-</html>
-
-
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+{% endblock %}

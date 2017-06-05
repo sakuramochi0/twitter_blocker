@@ -1,77 +1,78 @@
+{% extends 'twitter_blocker/base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>キンプラ ネタバレ アカウント スパム報告＆ブロックサービス ❌</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="XgVpJ5azAN2UwYSHRfKnJIPYVFtsNVnZRzKiLDfebX8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'avex_export_ban/default.css' %}">
-    <script src="{% static 'js/google-analytics.js' %}"></script>
-    <!--[if lt IE 9]>
-	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-  </head>
-  <body>
-    <article>
-    <h1>キンプラ ネタバレ アカウント スパム報告＆ブロックサービス ❌</h1>
+{% block body %}
+<div class="container">
+  <h1>キンプラ ネタバレ アカウント スパム報告＆ブロックサービス ❌</h1>
 
-    <div class="tweet-btn">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">このページをツイートする</a>
+  <div class="tweet-btn">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">このページをツイートする</a>
+  </div>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <p>
+    2017年6月1日の21:00ごろ、6月10日(土)公開の『KING OF PRISM -PRIDE the HERO-』の核心となる内容を意図的にネタバレをする、ある悪いアカウントが作られました(内容を知っている人がいるのは、すでに複数の試写会が行わているためです)。このアカウントは、ユーザー名などにネタバレを書き、ネタバレを見たくない人を狙ってわざと「いいね」して、ネタバレ情報を通知欄に表示させようとする、とっても悪質なアカウントです。全然ハピなるじゃないですよね…(¯―¯٥)。
+  </p>
+
+  <p>
+    このサービスは、その特定アカウント(と、もし作られた場合には新しいアカウント)を自動的にスパム報告＆ブロックします。このアカウントのユーザー名、@ID、自己紹介文のすべてにネタバレが書かれていますが、このサービスからブロックすれば、何も目にせずに済みます。
+  </p>
+
+  <div class="card">
+    <div class="card-block">
+      <div class="card-text">      
+        <small>注意1: スマートフォンのTwitterクライアント内のブラウザでは上手く動作しないことがあります。その場合は、ChromeやSafariなど、標準のブラウザから開いてみてください。</small>
+      </div>
     </div>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-    <p>2017年6月1日の21:00ごろ、6月10日(土)公開の『KING OF PRISM -PRIDE the HERO-』の核心となる内容を意図的にネタバレをする、ある悪いアカウントが作られました(内容を知っている人がいるのは、すでに複数の試写会が行わているためです)。このアカウントは、ユーザー名などにネタバレを書き、ネタバレを見たくない人を狙ってわざと「いいね」することで、ネタバレ情報を通知欄に表示させようとするとっても悪質なアカウントです。全然ハピなるじゃないですよね…(¯―¯٥)。このサービスは、その特定アカウント(と、もし作られた場合には新しいアカウント)を自動的にスパム報告＆ブロックします。このアカウントのユーザー名、@の名前、自己紹介文のすべてにネタバレが書かれていますが、このサービスからブロックすれば、何も目にせずに済みます。</p>
-
-    <p><small>注意1: スマートフォンのTwitterクライアント内のブラウザでは上手く動作しないことがあります。その場合は、ChromeやSafariなど、標準のブラウザから開いてみてください。</small></p>
-
-    <p><small>注意2: 非公式Twitterアプリを使っている方へ。アプリによっては、このサービスでユーザーをブロックした後、「○○をブロックしました」というポップアップメッセージや通知が表示されるアプリもあります。アプリの動作を確認して、うっかり目にしてしまうことがないように十分注意してください。</small></p>
-
-    <p><small>注意3: もしかしたら、今後新しいアカウントが作られる可能性もあります。新しいアカウントを見つけた方は、リプライまたはDMからお知らせください。</small></p>
-
-    <figure>
-        <img width="300px;" src="{% static 'twitter_blocker/account.png' %}">
-        <caption>
-            <p><small>こんな感じのアカウントです (ネタバレ部分は伏せ字に書き換えてあります)</small></p>
-        </caption>
-    </figure>
     
-    <p>下のボタンをクリックしてTwitterのアプリ連携をすると、以下のユーザーのスパム報告とブロックを実行します。ブロックを行うためにツイートする権限が必要ですが、これらのアカウントのスパム報告とブロック以外には何もしません。ご安心ください。</p>
-
-    <p>このサービスからブロックした数: <b>{{ block_count }}</b></p>
-
-    <p>現在ブロックするユーザーID
-      <ul>
-        {% for user_id in spam_user_ids %}
-        <li>{{ user_id }}</li>
-        {% endfor %}
-      </ul>
-    </p>
-    
-    <div id="connect-btn">
-      <p>
-        <a href="connect/">
-          <button>アカウントをスパム報告＆ブロックする</button>
-        </a>
-      </p>
+    <div class="card-block">
+      <div class="card-text">      
+        <small>注意2: 非公式Twitterアプリを使っている方へ。アプリによっては、このサービスでユーザーをブロックした後、「○○をブロックしました」というポップアップメッセージや通知が表示されるアプリもあります。アプリの動作を確認して、うっかり目にしてしまうことがないように十分注意してください。</small>
+      </div>
     </div>
-
-    <p><a href="https://twitter.com/Chupacabras_MON">チュパカブラさん(@Chupacabras_MON)</a>も同様のサービスを作ってくれました！ こちらでも同じことができるので、お好きな方をご利用ください。</p>
-
-    <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">「キンプラネタバレアカウントスパム報告＆ブロックサービス❌」を作りました！<br>プリズムの煌きを失ってしまったアカウントを、自動的にスパム報告してブロックします。<a href="https://t.co/pxZOz1gaXE">https://t.co/pxZOz1gaXE</a> <a href="https://t.co/ZbS9VFqYBm">pic.twitter.com/ZbS9VFqYBm</a></p>&mdash; さくらもち@プリズム✨ (@skrmch_rhythpri) <a href="https://twitter.com/skrmch_rhythpri/status/870328341009584129">June 1, 2017</a></blockquote>
-
-    <p><a href="https://github.com/sakuramochi0/twitter_blocker">このサービスのソースコード</a>: GitHubで公開しています。</p>
     
-    <hr>
+    <div class="card-block">
+      <div class="card-text">      
+        <small>注意3: もしかしたら、今後新しいアカウントが作られる可能性もあります。新しいアカウントを見つけた方は、リプライまたはDMからお知らせください。</small>
+      </div>
+    </div>
+  </div>
 
-    <p>作者: <a href="https://twitter.com/skrmch_rhythpri">さくらもち (@skrmch_rhythpri)</a></p>
-    </article>
-  </body>
-</html>
-    
-      
+  <figure>
+    <img width="300px;" src="{% static 'twitter_blocker/account.png' %}">
+    <caption>
+      <p><small>こんな感じのアカウントです (ネタバレ部分は伏せ字に書き換えてあります)</small></p>
+    </caption>
+  </figure>
+  
+  <p>下のボタンをクリックしてTwitterのアプリ連携をすると、以下のユーザーのスパム報告とブロックを実行します。Twitterの制約上、ブロックを行うためにはツイートなどの権限が必要ですが、これらのアカウントのスパム報告とブロック以外には何もしません。ご安心ください。</p>
+
+  <p>このサービスからブロックした数: <b>{{ block_count }}</b></p>
+
+  <p>現在ブロックするユーザーID
+    <ul>
+      {% for user_id in spam_user_ids %}
+      <li>{{ user_id }}</li>
+      {% endfor %}
+    </ul>
+  </p>
+  
+  <div id="connect-btn">
+    <a href="connect/">
+      <button class="btn btn-info">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        アカウントをスパム報告＆ブロックする</button>
+    </a>
+    <p></p>
+  </div>
+
+  <p><a href="https://twitter.com/Chupacabras_MON">チュパカブラさん(@Chupacabras_MON)</a>も同様のサービスを作ってくれました！ こちらでも同じことができるので、お好きな方をご利用ください。</p>
+
+  <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">さくらもちさんが同じの先に完成させてますが、同じくブロックとスパム報告するWEBアプリ作ったので公開しておきます　<a href="https://t.co/Ltn0wp3vqs">https://t.co/Ltn0wp3vqs</a></p>&mdash; 悶絶チュパカブラ (@Chupacabras_MON) <a href="https://twitter.com/Chupacabras_MON/status/870334669375496192">2017年6月1日</a></blockquote>
+
+  <p><a href="https://github.com/sakuramochi0/twitter_blocker">このサービスのソースコード</a>: GitHubで公開しています。</p>
+  
+  <hr>
+
+  <p>作者: <a href="https://twitter.com/skrmch_rhythpri">さくらもち (@skrmch_rhythpri)</a></p>
+</div>
+{% endblock %}
